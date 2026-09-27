@@ -1,4 +1,4 @@
-class Car{
+/*class Car{
 	String brand;
 	String colour;
 	
@@ -27,6 +27,35 @@ class Demo{
 		
 		c1.driver();
 	}	
+}*/
+
+//===============Attribute & Methode=================
+class Car{
+	String brand;
+	String colour;
+	
+	void drive(){
+		System.out.println("car is driving");
+	}
+	
+	void brake(){
+		System.out.println("car is breaking");
+	}
+}
+
+class Demo{
+	public static void main(String[] args){
+		Car c1 = new Car();
+		
+		c1.brand = "Toyota";
+		c1.colour = "Black";
+		
+		System.out.println(c1.brand);
+		System.out.println(c1.colour);
+		
+		c1.drive();
+		c1.brake();
+	}
 }
 
 
