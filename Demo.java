@@ -30,7 +30,7 @@ class Demo{
 }*/
 
 //===============Attribute & Methode=================
-class Car{
+/*class Car{
 	String brand;
 	String colour;
 	
@@ -47,6 +47,8 @@ class Demo{
 	public static void main(String[] args){
 		Car c1 = new Car();
 		
+		System.out.println(c1);
+		
 		c1.brand = "Toyota";
 		c1.colour = "Black";
 		
@@ -56,6 +58,37 @@ class Demo{
 		c1.drive();
 		c1.brake();
 	}
+}*/
+
+//==========================activity===================
+
+class Student{
+	int id;
+	String name;
+	int age;
+	
+	void printDetails(){
+		System.out.println("id : " + id);
+		System.out.println("name : " + name);
+		System.out.println("age : " + age);
+	}
 }
 
-
+class Demo{
+	public static void main(String[] args){
+		Student student1 = new Student();
+		Student student2 = new Student();
+		
+		student1.id = 1001;
+		student1.name = "Shenal";
+		student1.age = 19;
+		
+		student2.id = 1002;
+		student2.name = "Sithum";
+		student2.age = 22;
+		
+		student1.printDetails();
+		System.out.println("");
+		student2.printDetails();
+	}
+}
