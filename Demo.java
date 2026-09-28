@@ -93,8 +93,9 @@ class Demo{
 	}
 }*/
 
+//=================static===================
 
-class Student{
+/*class Student{
 		String name; 
 		
 		static void print(Student student){
@@ -114,5 +115,32 @@ class Demo{
 		System.out.println(student1.name = "shenal");
 		System.out.println(student2.name = "sithum");
 		//System.out.println(Student.name = "nisal");
+	}
+}*/
+
+//====================constructor=========================
+
+class Student{
+	int id = 1002;
+	String name = "Shenal";
+	int age = 23;
+	
+	Student(){
+		id = 1001;
+		name = "Shenal";
+		age = 19;
+	}
+	
+	void print(){
+		System.out.println(id);
+		System.out.println(name);
+		System.out.println(age);
+	}
+}
+class Demo{
+	public static void main(String[] args){
+		Student s1 = new Student();
+		
+		s1.print();
 	}
 }
