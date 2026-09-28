@@ -62,7 +62,7 @@ class Demo{
 
 //==========================activity===================
 
-class Student{
+/*class Student{
 	int id;
 	String name;
 	int age;
@@ -90,5 +90,29 @@ class Demo{
 		student1.printDetails();
 		System.out.println("");
 		student2.printDetails();
+	}
+}*/
+
+
+class Student{
+		String name; 
+		
+		static void print(Student student){
+			student.name = "shenal";
+			System.out.println(student.name);
+		}
+	}
+
+class Demo{
+	public static void main(String[] args){
+		Student student1 = new Student();
+		Student student2 = new Student();
+		
+		student1.print(student1);
+		student1.print(student2);
+		
+		System.out.println(student1.name = "shenal");
+		System.out.println(student2.name = "sithum");
+		//System.out.println(Student.name = "nisal");
 	}
 }
