@@ -120,7 +120,7 @@ class Demo{
 
 //====================constructor=========================
 
-class Student{
+/*class Student{
 	int id;
 	String name;
 	int age;
@@ -145,6 +145,35 @@ class Demo{
 		s1.id = 1002;
 		s1.name = "sithum";
 		s1.age = 22;
+		
+		s1.print();
+		s2.print();
+	}
+}*/
+
+//=================parametarized constructor===================
+
+class Student{
+	int id;
+	String name;
+	int age;
+	
+	Student(int id, String name, int age){
+		this.id = id;
+		this.name = name;
+		this.age = age;
+	}
+	
+	void print(){
+		System.out.println(id);
+		System.out.println(name);
+		System.out.println(age);
+	}
+}
+class Demo{
+	public static void main(String[] args){
+		Student s1 = new Student(1001,"Shenal",19);
+		Student s2 = new Student(1002,"Sithum",22);
 		
 		s1.print();
 		s2.print();
