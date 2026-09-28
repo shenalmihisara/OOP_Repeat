@@ -121,9 +121,9 @@ class Demo{
 //====================constructor=========================
 
 class Student{
-	int id = 1002;
-	String name = "Shenal";
-	int age = 23;
+	int id;
+	String name;
+	int age;
 	
 	Student(){
 		id = 1001;
@@ -140,7 +140,13 @@ class Student{
 class Demo{
 	public static void main(String[] args){
 		Student s1 = new Student();
+		Student s2 = new Student();
+		
+		s1.id = 1002;
+		s1.name = "sithum";
+		s1.age = 22;
 		
 		s1.print();
+		s2.print();
 	}
 }
