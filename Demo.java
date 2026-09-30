@@ -231,7 +231,7 @@ class Demo{
 
 //=======================activity=========================
 
-class Box{
+/*class Box{
 	int length;
 	int width;
 	int height;
@@ -269,4 +269,22 @@ class Demo{
 		System.out.println("");
 		b3.printvolume();
 	}
+}*/
+
+class Student{
+	Student(){
+		System.out.println("Constroctor 1.....");
+	}
+	
+	Student(int id){
+		this();
+		System.out.println("Constroctor 2....");
+	}
 }
+
+class Demo{
+	public static void main(String[] args){
+		Student s1 = new Student(1001);
+		
+	}
+} 
