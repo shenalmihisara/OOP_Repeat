@@ -271,7 +271,7 @@ class Demo{
 	}
 }*/
 
-class Student{
+/*class Student{
 	Student(){
 		System.out.println("Constroctor 1.....");
 	}
@@ -287,4 +287,34 @@ class Demo{
 		Student s1 = new Student(1001);
 		
 	}
-} 
+} */
+
+class Student{
+	int id;
+	String name;
+	int age;
+	
+	Student(){
+		
+		System.out.println(id);
+		System.out.println(name);
+		System.out.println(age + "\n");
+	}
+	
+	Student(int id, String name, int age){
+		this();
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		
+		System.out.println(id);
+		System.out.println(name);
+		System.out.println(age);
+	}
+}
+
+class Demo{
+	public static void main(String[] args){
+		Student s1 = new Student(1001, "Shenal", 19);
+	}
+}
