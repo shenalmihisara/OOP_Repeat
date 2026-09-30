@@ -153,7 +153,7 @@ class Demo{
 
 //=================parametarized constructor===================
 
-class Student{
+/*class Student{
 	int id;
 	String name;
 	int age;
@@ -177,5 +177,54 @@ class Demo{
 		
 		s1.print();
 		s2.print();
+	}
+}*/
+
+//================constrocture overloading=====================
+
+class Student{
+	int id;
+	String name;
+	int age;
+	
+	Student(){
+		System.out.println("Empty Constrocture....");
+	}
+	
+	Student(int id){
+		this.id = id;
+	}
+	
+	Student(int id, String name){
+		this.id = id;
+		this.name = name;
+	}
+	
+	Student(int id, String name, int age){
+		this.id = id;
+		this.name = name;
+		this.age = age;
+	}
+	
+	void print(){
+		System.out.println(id);
+		System.out.println(name);
+		System.out.println(age);
+	}
+}
+class Demo{
+	public static void main(String[] args){
+		Student s1 = new Student();
+		Student s2 = new Student(1002);
+		Student s3 = new Student(1002,"Sithum");
+		Student s4 = new Student(1002,"Sithum",19);
+		
+		s1.print();
+		System.out.println("");
+		s2.print();
+		System.out.println("");
+		s3.print();
+		System.out.println("");
+		s4.print();
 	}
 }
