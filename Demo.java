@@ -182,7 +182,7 @@ class Demo{
 
 //================constrocture overloading=====================
 
-class Student{
+/*class Student{
 	int id;
 	String name;
 	int age;
@@ -226,5 +226,47 @@ class Demo{
 		s3.print();
 		System.out.println("");
 		s4.print();
+	}
+}*/
+
+//=======================activity=========================
+
+class Box{
+	int length;
+	int width;
+	int height;
+	
+	Box(){
+		
+	}
+	
+	Box(int length, int width, int height){
+		this.length = length;
+		this.width = width;
+		this.height = height;
+	}
+	
+	Box(int length){
+		this.length = length;
+		width = 1;
+		height = 1;
+	}
+	
+	void printvolume(){
+		System.out.println("Volume : " + length*width*height);
+	}
+}
+
+class Demo{
+	public static void main(String[] args){
+		Box b1 = new Box();
+		Box b2 = new Box(10,5,3);
+		Box b3 = new Box(20);
+		
+		b1.printvolume();
+		System.out.println("");
+		b2.printvolume();
+		System.out.println("");
+		b3.printvolume();
 	}
 }
