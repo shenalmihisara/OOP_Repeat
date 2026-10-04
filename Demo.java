@@ -289,7 +289,7 @@ class Demo{
 	}
 } */
 
-class Student{
+/*class Student{
 	int id;
 	String name;
 	int age;
@@ -316,5 +316,43 @@ class Student{
 class Demo{
 	public static void main(String[] args){
 		Student s1 = new Student(1001, "Shenal", 19);
+	}
+}*/
+
+//=======================constroctor chainning=============
+
+class student{
+	int id;
+	String name;
+	int age;
+	
+	student(){
+		this(0);
+		System.out.println("1");
+	}
+	
+	student(int id){
+		this(id,"unknown");
+		System.out.println("2");
+	}
+	
+	student(int id,String name){
+		this(id,name,0);
+		System.out.println("3");
+	}
+	
+	student(int id, String name, int age){
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		System.out.println("4");
+		
+
+	}
+}
+
+class Demo{
+	public static void main(String[] args){
+		student s1 = new student();
 	}
 }
