@@ -359,7 +359,7 @@ class Demo{
 
 //==================Encapsulation==========================
 
-class Student{
+/*class Student{
 	private Integer age;
 	
 	public Integer getAge(){
@@ -381,5 +381,51 @@ class Demo{
 		s1.setAge(20);
 		
 		System.out.println(s1.getAge());
+	}
+}*/
+
+//=================Activity=====================
+
+class BankAccount{
+	private int accountNumber;
+	private String name;
+	private double balance;
+	
+	public void setAccountNumber(int accountNumber){
+		this.accountNumber = accountNumber;
+	}
+	
+	public void setName(String name){
+		this.name = name;
+	}
+	
+	public void setBallance(double balance){
+		this.balance = balance;
+	}
+	
+	public int getAccountNumber(){
+		return accountNumber;
+	}
+	
+	public String getName(){
+		return name;
+	}
+	
+	public double getBallance(){
+		return balance;
+	}
+}
+
+class Demo{
+	public static void main(String[] args){
+		BankAccount account = new BankAccount();
+		
+		account.setAccountNumber(1001);
+		account.setName("Shenal");
+		account.setBallance(50000);
+		
+		System.out.println(account.getAccountNumber());
+		System.out.println(account.getName());
+		System.out.println(account.getBallance());
 	}
 }
