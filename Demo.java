@@ -386,7 +386,7 @@ class Demo{
 
 //=================Activity=====================
 
-class BankAccount{
+/*class BankAccount{
 	private int accountNumber;
 	private String name;
 	private double balance;
@@ -427,5 +427,37 @@ class Demo{
 		System.out.println(account.getAccountNumber());
 		System.out.println(account.getName());
 		System.out.println(account.getBallance());
+	}
+}*/
+
+
+class Student{
+	int id;
+	String name = "Shenal";
+		
+	static String Campus = "icet";
+	static final String petName = "Puffy";
+	
+
+	static void print(){
+		//System.out.println(s1.name);
+		System.out.println(petName);
+		System.out.println(Campus);
+	}
+}
+
+class Demo{
+	public static void main(String[] args){
+		Student s1 = new Student();
+		Student s2 = new Student();
+		Student s3 = new Student();
+		
+		Student.Campus = "Sliit";
+		
+		System.out.println(Student.Campus);
+		System.out.println(Student.name);
+		System.out.println(s1.Campus);
+		
+		s1.print();
 	}
 }
