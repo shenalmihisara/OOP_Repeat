@@ -431,7 +431,7 @@ class Demo{
 }*/
 
 
-class Student{
+/*class Student{
 	int id;
 	String name = "Shenal";
 		
@@ -459,5 +459,25 @@ class Demo{
 		System.out.println(s1.Campus);
 		
 		s1.print();
+	}
+}*/
+
+
+class Student {
+    String name;
+}
+
+class Demo{
+	public static void main(String[] args){
+		   Student s1 = null;
+
+	s1.name = "Shenal";
+
+	Student s2 = s1;
+
+	s2.name = "Sithum";
+
+	System.out.println(s1.name);
+	System.out.println(s2.name);
 	}
 }
