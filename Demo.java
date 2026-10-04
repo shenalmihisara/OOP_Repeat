@@ -321,7 +321,7 @@ class Demo{
 
 //=======================constroctor chainning=============
 
-class student{
+/*class student{
 	int id;
 	String name;
 	int age;
@@ -354,5 +354,32 @@ class student{
 class Demo{
 	public static void main(String[] args){
 		student s1 = new student();
+	}
+}*/
+
+//==================Encapsulation==========================
+
+class Student{
+	private Integer age;
+	
+	public Integer getAge(){
+		return age;
+	}
+	
+	public void setAge(Integer age){
+		
+		if(age >= 0){
+			this.age = age;
+		}
+	}
+}
+
+class Demo{
+	public static void main(String[] args){
+		Student s1 = new Student();
+		
+		s1.setAge(20);
+		
+		System.out.println(s1.getAge());
 	}
 }
