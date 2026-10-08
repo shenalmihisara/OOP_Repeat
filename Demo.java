@@ -463,7 +463,7 @@ class Demo{
 }*/
 
 
-class Student {
+/*class Student {
     String name;
 }
 
@@ -479,5 +479,29 @@ class Demo{
 
 	System.out.println(s1.name);
 	System.out.println(s2.name);
+	}
+}*/
+
+class Student{
+	String name;
+	
+
+}
+class Demo{
+	public static void main(String[] args){
+
+		Student[] student = new Student[3];
+		
+		student[0] = new Student();
+		student[1] = new Student();
+		student[2] = new Student();
+		
+		student[0].name = "Sithum";
+		student[1].name = "Shenal";
+		student[2].name = "Nisal";
+		
+		System.out.println(student[0].name);
+		System.out.println(student[1].name);
+		System.out.println(student[2].name);
 	}
 }
