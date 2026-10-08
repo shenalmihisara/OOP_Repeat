@@ -482,7 +482,10 @@ class Demo{
 	}
 }*/
 
-class Student{
+
+//========================object array=====================
+
+/*class Student{
 	String name;
 	
 
@@ -503,5 +506,38 @@ class Demo{
 		System.out.println(student[0].name);
 		System.out.println(student[1].name);
 		System.out.println(student[2].name);
+	}
+}*/
+
+
+class Student{
+	int id;
+	String name;
+	
+	Student(int id, String name){
+		this.id = id;
+		this.name = name;
+	}
+}
+class Demo{
+	public static void main(String[] args){
+
+		Student[] student = new Student[3];
+		
+		student[0] = new Student(1,"Shenal");
+		student[1] = new Student(2,"Sithum");
+		student[2] = new Student(3,"Nisal");
+		
+		student[0].name = "Bihandu";
+		
+		for(int i=0; i<student.length; i++){
+			System.out.println(student[i].name);
+			System.out.println(student[i].id);
+		}
+		
+		for(Student students : student){
+			System.out.println(students.name);
+			System.out.println(students.id);
+		}
 	}
 }
