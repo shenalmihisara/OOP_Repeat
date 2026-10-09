@@ -580,7 +580,7 @@ class Demo{
 }*/
 
 
-class Student{
+/*class Student{
 	int id;
 	String name;
 	
@@ -607,5 +607,25 @@ class Demo{
 				break;
 			}
 		}
+	}
+}*/
+
+
+//============Array List==================================
+
+import java.util.ArrayList;
+class Demo{
+	public static void main(String[] args){
+		ArrayList<String> names = new ArrayList<>();
+		
+		names.add("Shenal");
+		names.add("Sithum");
+		names.add("Nisal");
+		
+		names.set(0, "Shenal mihisara");
+		System.out.println(names.get(0));
+		System.out.println(names.remove(2));
+		//System.out.println(names.get(2));
+		System.out.println(names.size());
 	}
 }
