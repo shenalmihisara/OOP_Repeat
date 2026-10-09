@@ -510,7 +510,7 @@ class Demo{
 }*/
 
 
-class Student{
+/*class Student{
 	int id;
 	String name;
 	
@@ -538,6 +538,43 @@ class Demo{
 		for(Student students : student){
 			System.out.println(students.name);
 			System.out.println(students.id);
+		}
+	}
+}*/
+
+
+class Student{
+	int id;
+	String name;
+	
+	Student(int id, String name){
+		this.id = id;
+		this.name = name;
+	}
+}
+
+class Demo{
+	public static void main(String[] args){
+		Student[] student = new Student[3];
+		
+		student[0] = new Student(1001,"Shenal");
+		student[1] = new Student(1002,"Sithum");
+		student[2] = new Student(1003,"Nisal");
+		
+		int SearchId = 1001;
+		boolean found = false ;
+		
+		for(int i=0; i<student.length; i++){
+			if(student[i] != null && student[i].id == SearchId){
+				System.out.println("Student found...");
+				System.out.println(student[i].name);
+				
+
+				break;
+			}
+		}
+		if(!found){
+			System.out.println("Student not found");
 		}
 	}
 }
