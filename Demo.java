@@ -613,7 +613,7 @@ class Demo{
 
 //============Array List==================================
 
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 class Demo{
 	public static void main(String[] args){
 		ArrayList<String> names = new ArrayList<>();
@@ -627,5 +627,76 @@ class Demo{
 		System.out.println(names.remove(2));
 		//System.out.println(names.get(2));
 		System.out.println(names.size());
+	}
+}*/
+
+
+
+//==============Java Swing aplication======================
+
+/*import javax.swing.*;
+import java.awt.event.*;
+class Demo{
+	public static void main(String[] args){
+		
+		JFrame frame = new JFrame("My First Swing app");
+		
+		JLabel label = new JLabel("Hello Java swing");
+		frame.add(label);
+		
+		JButton button = new JButton("cilck me");
+		button.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e){
+				JOptionPane.showMessageDialog(frame, "Hello bro!");
+			}
+		});
+		
+		frame.add(button);
+		
+		frame.setSize(400,300);
+		
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		 
+		frame.setLocationRelativeTo(null);
+		
+		frame.setVisible(true);
+	}
+}*/
+
+import javax.swing.*;
+import java.awt.*;
+
+class Demo{
+	public static void main(String[] args){
+		JFrame frame = new JFrame("Name Entry App");
+		frame.setSize(300,400);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setLocationRelativeTo(null);
+		
+		JPanel panel = new JPanel();
+		panel.setLayout(new FlowLayout());
+		
+		JLabel lable = new JLabel("Enter Your Name");
+		
+		JTextField 	nameField = new JTextField(15);
+		
+		JButton button = new JButton("Submith");
+		
+		JLabel resultLabele = new JLabel("");
+		
+		button.addActionListener(e ->{
+				String name = nameField.getText();
+				
+				resultLabele.setText("Welcome " + name + "!");
+			});
+			
+		panel.add(lable);
+		panel.add(nameField);
+		panel.add(button);
+		panel.add(resultLabele);
+		
+		frame.add(panel);
+		frame.setVisible(true);
 	}
 }
