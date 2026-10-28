@@ -664,7 +664,7 @@ class Demo{
 	}
 }*/
 
-import javax.swing.*;
+/*import javax.swing.*;
 import java.awt.*;
 
 class Demo{
@@ -699,4 +699,67 @@ class Demo{
 		frame.add(panel);
 		frame.setVisible(true);
 	}
-}
+}*/
+
+// import javax.swing.*;
+// import java.awt.*;
+// class Demo{
+// 	public static void main(String[] args){
+// 		JFrame frame = new JFrame("My Aplication");
+// 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+// 		frame.setLocationRelativeTo(null);
+// 		frame.setSize(300,400);
+		
+// 		CardLayout cardLayout = new CardLayout();
+// 		JPanel mainPanel = new JPanel(cardLayout);
+		
+// 		//---------------login page-------------------
+		
+// 		JPanel loginPanel = new JPanel(new FlowLayout());
+		
+// 		JLabel lable = new JLabel("Welcome! Enter Your name");
+// 		JTextField nameField = new JTextField(18);
+// 		JButton loginBtn = new JButton("Login");
+		
+// 		loginPanel.add(lable);
+// 		loginPanel.add(nameField);
+// 		loginPanel.add(loginBtn);
+		
+// 		//---------------home-------------------------
+		
+// 		JPanel homePanel = new JPanel(new FlowLayout());
+		
+// 		JLabel welcomeLbl = new JLabel("Welcome Home Lable");
+// 		JLabel welcomeLable = new JLabel();
+// 		JButton logoutButton = new JButton("Logout");
+		
+// 		homePanel.add(welcomeLbl);
+// 		homePanel.add(welcomeLable);
+// 		homePanel.add(logoutButton);
+		
+// 		mainPanel.add(loginPanel, "Login");
+// 		mainPanel.add(homePanel, "Home");
+		
+// 		//loginbtn
+		
+// 		loginBtn.addActionListener(e -> {
+// 				String name = nameField.getText().trim();
+				
+// 				if(name.isEmpty()){
+// 					JOptionPane.showMessageDialog(frame, "Pleas enter your name");
+// 				}else{
+// 					welcomeLable.setText("Welcome " + name + " !");
+// 					cardLayout.show(mainPanel, "Home");
+// 				}
+// 			});
+			
+// 			logoutButton.addActionListener(e -> {
+// 					cardLayout.show(mainPanel, "Login");
+// 				});
+		
+// 		frame.add(mainPanel);
+// 		frame.setVisible(true);
+// 	}
+// }
+
+
