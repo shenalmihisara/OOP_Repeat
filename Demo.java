@@ -763,3 +763,28 @@ class Demo{
 // }
 
 
+// =====================inheritance==========================
+
+class Animal{
+	String name = "Dog";
+
+	void eat(){
+		System.out.println("Dog Is Eating");
+	}
+}
+
+class Dog extends Animal{
+	void bark(){
+		System.out.println("Dog Is Barking");
+	}
+}
+
+public class Demo {
+	public static void main(String[] args) {
+		Dog dog = new Dog();
+		
+		System.out.println(dog.name);
+		dog.eat();
+		dog.bark();
+	}	
+}
