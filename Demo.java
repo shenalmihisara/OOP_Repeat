@@ -765,26 +765,72 @@ class Demo{
 
 // =====================inheritance==========================
 
-class Animal{
-	String name = "Dog";
+// class Animal{
+// 	String name = "Dog";
 
-	void eat(){
-		System.out.println("Dog Is Eating");
-	}
+// 	void eat(){
+// 		System.out.println("Dog Is Eating");
+// 	}
+// }
+
+// class Dog extends Animal{
+// 	void bark(){
+// 		System.out.println("Dog Is Barking");
+// 	}
+// }
+
+// public class Demo {
+// 	public static void main(String[] args) {
+// 		Dog dog = new Dog();
+		
+// 		System.out.println(dog.name);
+// 		dog.eat();
+// 		dog.bark();
+// 	}	
+// }
+
+class Person {
+
+    private String name;
+    String email;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    void printDetails() {
+
+        System.out.println("name : " + name);
+        System.out.println("email : " + email);
+    }
+
 }
 
-class Dog extends Animal{
-	void bark(){
-		System.out.println("Dog Is Barking");
-	}
+class Student extends Person {
+
+    String studentId;
+
+    void print() {
+        System.out.println(getName() + " is Studying");
+    }
 }
 
 public class Demo {
-	public static void main(String[] args) {
-		Dog dog = new Dog();
-		
-		System.out.println(dog.name);
-		dog.eat();
-		dog.bark();
-	}	
+
+    public static void main(String[] args) {
+        Student s1 = new Student();
+
+        s1.setName("Shenal");
+        s1.email = "shenalmihisara@example.com";
+        s1.studentId = "S001";
+
+        s1.printDetails();
+        System.out.println("Id : " + s1.studentId);
+        s1.print();
+    }
+
 }
