@@ -789,7 +789,7 @@ class Demo{
 // 	}	
 // }
 
-class Person {
+/*class Person {
 
     private String name;
     String email;
@@ -833,4 +833,29 @@ public class Demo {
         s1.print();
     }
 
+}*/
+
+class Person{
+
+	String name = "Shenal";
+
+    Person() {
+		System.out.println("person Constructor");
+	}
+	
+}
+
+class Student extends Person{
+
+    Student() {
+		System.out.println("student constructor");
+    }
+}
+
+class Demo{
+	public static void main(String[] args) {
+		Student s1 = new Student();
+
+		System.out.println(s1.name);
+	}
 }
