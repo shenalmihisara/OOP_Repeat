@@ -983,42 +983,81 @@ class Demo{
 // }
 
 
-class Animal{
+// class Animal{
 
-	void makeSound(){
-		System.out.println("Animals are make sound");
-	}
+// 	void makeSound(){
+// 		System.out.println("Animals are make sound");
+// 	}
+// }
+
+// class Dog extends Animal{
+// 	@Override 
+// 	void makeSound(){
+// 		System.out.println("Dog is barking");
+// 	}
+// }
+
+// class Pitbull extends Dog{
+// 	@Override 
+// 	void makeSound(){
+// 		System.out.println("Pitbull is barking too");
+// 	}
+// }
+
+// class sheped extends Dog{
+// 	@Override 
+// 	void makeSound(){
+// 		System.out.println("Sheperd barking too");
+// 	}
+// }
+
+// class Demo{
+// 	public static void main(String[] args) {
+// 		Animal a = new Dog();
+// 		Dog b = new Pitbull();
+// 		Dog c = new sheped();
+
+// 		a.makeSound();
+// 		b.makeSound();
+// 		c.makeSound();
+// 	}
+// }
+
+
+// ---------------exercise----------------------
+
+class Person {
+
+    String name;
+    int age;
+
+    void displayPersonDetails() {
+        System.out.println("Student Details");
+        System.out.println("name : " + name);
+        System.out.println("age : " + age);
+    }
 }
 
-class Dog extends Animal{
-	@Override 
-	void makeSound(){
-		System.out.println("Dog is barking");
-	}
+class Student extends Person {
+
+    String studentId;
+
+    void study() {
+        System.out.println("student Id : " + studentId);
+		System.out.println(name + " Is a Student");
+    }
 }
 
-class Pitbull extends Dog{
-	@Override 
-	void makeSound(){
-		System.out.println("Pitbull is barking too");
-	}
-}
+class Demo {
 
-class sheped extends Dog{
-	@Override 
-	void makeSound(){
-		System.out.println("Sheperd barking too");
-	}
-}
+    public static void main(String[] args) {
+        Student student = new Student();
 
-class Demo{
-	public static void main(String[] args) {
-		Animal a = new Dog();
-		Dog b = new Pitbull();
-		Dog c = new sheped();
+        student.name = "Shenal";
+        student.age = 19;
+        student.studentId = "S001";
 
-		a.makeSound();
-		b.makeSound();
-		c.makeSound();
-	}
+        student.displayPersonDetails();
+        student.study();
+    }
 }
