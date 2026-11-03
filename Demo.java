@@ -862,34 +862,95 @@ class Demo{
 	}
 }*/
 
-class Person{
+// class Person{
 
-	String name;
+// 	String name;
 
-    Person(String name) {
+//     Person(String name) {
 
-		this.name = name;
-		System.out.println(name);
-    }
+// 		this.name = name;
+// 		System.out.println(name);
+//     }
 
+// }
+// class Student extends Person{
+
+//     Student(String name) {
+// 		super(name);
+// 		System.out.println("Studen Constroctor");
+//     }
+
+// }
+// class Teachers extends Person{
+
+//     Teachers(String name) {
+//         super(name);
+//     }
+
+// }
+// class Demo{
+// 	public static void main(String[] args) {
+// 		System.out.println(new Student("Shenal").name);
+// 	}
+// }
+
+// 
+
+// class Animal{
+// 	String name = "Animal";
+
+// 	void printAnimal(){
+// 		System.out.println("this is animal");
+// 	}
+// }
+
+// class Dog extends Animal{
+// 	String name = "Dog";
+
+// 	void PrintName() {
+// 		super.printAnimal();
+// 		System.out.println(super.name);
+// 		System.out.println(name);
+// 	}
+// }
+
+// class Demo{
+// 	public static void main(String[] args) {
+// 		Dog d = new Dog();
+// 		d.PrintName();
+
+// 	}
+// }
+
+class Animal{
+
+	void makeSound(){
+		System.out.println("Animal make a sound");
+	}
 }
-class Student extends Person{
 
-    Student(String name) {
-		super(name);
-		System.out.println("Studen Constroctor");
-    }
-
+class Dog extends Animal{
+	@Override 
+	void makeSound(){
+		System.out.println("Dog barking");
+	}
 }
-class Teachers extends Person{
 
-    Teachers(String name) {
-        super(name);
-    }
-
+class Cat extends Animal{
+	@Override 
+	void makeSound(){
+		System.out.println("Cat meaw");
+	}
 }
+
 class Demo{
 	public static void main(String[] args) {
-		System.out.println(new Student("Shenal").name);
+		Animal a = new Animal();
+		Animal d = new Dog();
+		Animal c = new Cat();
+
+		a.makeSound();
+		d.makeSound();
+		c.makeSound();
 	}
 }
