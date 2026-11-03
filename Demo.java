@@ -894,7 +894,10 @@ class Demo{
 // 	}
 // }
 
-// 
+
+
+
+
 
 // class Animal{
 // 	String name = "Animal";
@@ -921,6 +924,9 @@ class Demo{
 
 // 	}
 // }
+
+
+
 
 // class Animal{
 
@@ -955,6 +961,10 @@ class Demo{
 // 	}
 // }
 
+
+
+
+
 // class Animal{
 
 // 	void makeSound(){
@@ -981,6 +991,9 @@ class Demo{
 // 		animal.eat();
 // 	}
 // }
+
+
+
 
 
 // class Animal{
@@ -1026,38 +1039,66 @@ class Demo{
 
 // ---------------exercise----------------------
 
-class Person {
+// class Person {
 
-    String name;
-    int age;
+//     String name;
+//     int age;
 
-    void displayPersonDetails() {
-        System.out.println("Student Details");
-        System.out.println("name : " + name);
-        System.out.println("age : " + age);
+//     void displayPersonDetails() {
+//         System.out.println("Student Details");
+//         System.out.println("name : " + name);
+//         System.out.println("age : " + age);
+//     }
+// }
+
+// class Student extends Person {
+
+//     String studentId;
+
+//     void study() {
+//         System.out.println("student Id : " + studentId);
+// 		System.out.println(name + " Is a Student");
+//     }
+// }
+
+// class Demo {
+
+//     public static void main(String[] args) {
+//         Student student = new Student();
+
+//         student.name = "Shenal";
+//         student.age = 19;
+//         student.studentId = "S001";
+
+//         student.displayPersonDetails();
+//         student.study();
+//     }
+// }
+
+
+
+//---------------------------------------------------------
+
+class Animal {
+
+    void makeSound() {
+        System.out.println("Animal make a sound");
     }
 }
 
-class Student extends Person {
+class Dog extends Animal {
 
-    String studentId;
-
-    void study() {
-        System.out.println("student Id : " + studentId);
-		System.out.println(name + " Is a Student");
+    @Override
+    void makeSound() {
+        System.out.println("Dog is Barking");
     }
 }
 
 class Demo {
 
     public static void main(String[] args) {
-        Student student = new Student();
+        Dog dog = new Dog();
 
-        student.name = "Shenal";
-        student.age = 19;
-        student.studentId = "S001";
-
-        student.displayPersonDetails();
-        student.study();
+        dog.makeSound();
     }
 }
