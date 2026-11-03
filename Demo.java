@@ -922,35 +922,103 @@ class Demo{
 // 	}
 // }
 
+// class Animal{
+
+// 	void makeSound(){
+// 		System.out.println("Animal make a sound");
+// 	}
+// }
+
+// class Dog extends Animal{
+// 	@Override 
+// 	void makeSound(){
+// 		System.out.println("Dog barking");
+// 	}
+// }
+
+// class Cat extends Animal{
+// 	@Override 
+// 	void makeSound(){
+// 		System.out.println("Cat meaw");
+// 	}
+// }
+
+// class Demo{
+// 	public static void main(String[] args) {
+// 		Animal a = new Animal();
+// 		Animal d = new Dog();
+// 		Animal c = new Cat();
+
+// 		a.makeSound();
+// 		d.makeSound();
+// 		c.makeSound();
+// 	}
+// }
+
+// class Animal{
+
+// 	void makeSound(){
+// 		System.out.println("Animals are make sound");
+// 	}
+// }
+
+// class Dog extends Animal{
+// 	@Override 
+// 	void makeSound(){
+// 		System.out.println("Dog is barking");
+// 	}
+
+// 	void eat(){
+// 		System.out.println("Dog is eating");
+// 	}
+// }
+
+// class Demo{
+// 	public static void main(String[] args) {
+// 		Animal animal = new Dog();
+
+// 		animal.makeSound();
+// 		animal.eat();
+// 	}
+// }
+
+
 class Animal{
 
 	void makeSound(){
-		System.out.println("Animal make a sound");
+		System.out.println("Animals are make sound");
 	}
 }
 
 class Dog extends Animal{
 	@Override 
 	void makeSound(){
-		System.out.println("Dog barking");
+		System.out.println("Dog is barking");
 	}
 }
 
-class Cat extends Animal{
+class Pitbull extends Dog{
 	@Override 
 	void makeSound(){
-		System.out.println("Cat meaw");
+		System.out.println("Pitbull is barking too");
+	}
+}
+
+class sheped extends Dog{
+	@Override 
+	void makeSound(){
+		System.out.println("Sheperd barking too");
 	}
 }
 
 class Demo{
 	public static void main(String[] args) {
-		Animal a = new Animal();
-		Animal d = new Dog();
-		Animal c = new Cat();
+		Animal a = new Dog();
+		Dog b = new Pitbull();
+		Dog c = new sheped();
 
 		a.makeSound();
-		d.makeSound();
+		b.makeSound();
 		c.makeSound();
 	}
 }
