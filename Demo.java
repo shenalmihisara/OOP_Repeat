@@ -1,3 +1,5 @@
+
+
 /*class Car{
 	String brand;
 	String colour;
@@ -835,7 +837,7 @@ public class Demo {
 
 }*/
 
-class Person{
+/*class Person{
 
 	String name = "Shenal";
 
@@ -857,5 +859,37 @@ class Demo{
 		Student s1 = new Student();
 
 		System.out.println(s1.name);
+	}
+}*/
+
+class Person{
+
+	String name;
+
+    Person(String name) {
+
+		this.name = name;
+		System.out.println(name);
+    }
+
+}
+class Student extends Person{
+
+    Student(String name) {
+		super(name);
+		System.out.println("Studen Constroctor");
+    }
+
+}
+class Teachers extends Person{
+
+    Teachers(String name) {
+        super(name);
+    }
+
+}
+class Demo{
+	public static void main(String[] args) {
+		System.out.println(new Student("Shenal").name);
 	}
 }
