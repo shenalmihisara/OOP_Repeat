@@ -1079,26 +1079,58 @@ class Demo{
 
 //---------------------------------------------------------
 
+// class Animal {
+
+//     void makeSound() {
+//         System.out.println("Animal make a sound");
+//     }
+// }
+
+// class Dog extends Animal {
+
+//     @Override
+//     void makeSound() {
+//         System.out.println("Dog is Barking");
+//     }
+// }
+
+// class Demo {
+
+//     public static void main(String[] args) {
+//         Dog dog = new Dog();
+
+//         dog.makeSound();
+//     }
+// }
+
+
+//---------------------------------------------------------------
+
 class Animal {
 
-    void makeSound() {
-        System.out.println("Animal make a sound");
+    Animal() {
+        System.out.println("Animal make sound");
     }
 }
 
 class Dog extends Animal {
 
-    @Override
-    void makeSound() {
-        System.out.println("Dog is Barking");
+    Dog() {
+        System.out.println("Dog is barking");
+    }
+}
+
+class Cat extends Animal {
+
+    Cat() {
+        System.out.println("Cat is meow");
     }
 }
 
 class Demo {
 
     public static void main(String[] args) {
+        Cat cat = new Cat();
         Dog dog = new Dog();
-
-        dog.makeSound();
     }
 }
