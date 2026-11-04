@@ -1106,31 +1106,59 @@ class Demo{
 
 //---------------------------------------------------------------
 
-class Animal {
+// class Animal {
 
-    Animal() {
-        System.out.println("Animal make sound");
+//     Animal() {
+//         System.out.println("Animal make sound");
+//     }
+// }
+
+// class Dog extends Animal {
+
+//     Dog() {
+//         System.out.println("Dog is barking");
+//     }
+// }
+
+// class Cat extends Animal {
+
+//     Cat() {
+//         System.out.println("Cat is meow");
+//     }
+// }
+
+// class Demo {
+
+//     public static void main(String[] args) {
+//         Cat cat = new Cat();
+//         Dog dog = new Dog();
+//     }
+// }
+
+
+// -------------------------------------------------------------
+
+
+class Person {
+
+    Person(String name, int age) {
+        System.out.println(name + " - " + age);
     }
 }
 
-class Dog extends Animal {
+class Student extends Person {
 
-    Dog() {
-        System.out.println("Dog is barking");
-    }
-}
+    Student(String name, int age) {
 
-class Cat extends Animal {
+        super(name, age);
 
-    Cat() {
-        System.out.println("Cat is meow");
+        System.out.println("Student constructor");
     }
 }
 
 class Demo {
 
     public static void main(String[] args) {
-        Cat cat = new Cat();
-        Dog dog = new Dog();
+        Student student = new Student("Shenal", 19);
     }
 }
