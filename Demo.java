@@ -1139,26 +1139,97 @@ class Demo{
 // -------------------------------------------------------------
 
 
-class Person {
+// class Person {
 
-    Person(String name, int age) {
-        System.out.println(name + " - " + age);
+//     Person(String name, int age) {
+//         System.out.println(name + " - " + age);
+//     }
+// }
+
+// class Student extends Person {
+
+//     Student(String name, int age) {
+		 
+
+//         super(name, age);
+
+//         System.out.println("Student constructor");
+//     }
+// }
+
+// class Demo {
+
+//     public static void main(String[] args) {
+//         Student student = new Student("Shenal", 19);
+//     }
+// }
+
+//---------------------------------------------------------------
+
+
+// ==============================Polymorphism================================
+
+
+// class Animal{
+// 	void makeSound(){
+// 		System.out.println("Animal make a sound");
+// 	}
+// }
+
+// class Dog extends Animal{
+
+// 	void makeSound(){
+// 		System.out.println("Dog make a sound");
+// 	} 
+// }
+
+// class Cat extends Animal{
+// 	void makeSound(){
+// 		System.out.println("Cat make a sound");
+// 	}
+// }
+
+// class Demo {
+// 	public static void main(String[] args) {
+// 		Animal dog = new Dog();
+// 		Animal cat = new Cat();
+
+// 		dog.makeSound();
+// 		cat.makeSound();
+// 	}
+	
+// }
+
+
+class Animal {
+    void eat() {
+        System.out.println("Animal eating");
+    }
+
+    void sleep() {
+        System.out.println("Animal sleeping");
     }
 }
 
-class Student extends Person {
+class Dog extends Animal {
+    @Override
+    void eat() {
+        System.out.println("Dog eating");
+    }
 
-    Student(String name, int age) {
-
-        super(name, age);
-
-        System.out.println("Student constructor");
+    void bark() {
+        System.out.println("Dog barking");
     }
 }
 
 class Demo {
-
     public static void main(String[] args) {
-        Student student = new Student("Shenal", 19);
+
+        Animal animal = new Dog();
+
+        animal.eat();
+        animal.sleep();
+
+        // animal.bark();
     }
 }
